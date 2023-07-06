@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- main css -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+
+  <!-- overlay -->
+
+  <!-- header -->
+  <header class=" top-0 bg-pink-200 z-40">
+    <div class="container max-w-6xl mx-auto  header ">
+      <nav class="navbar">
+        <!-- logo -->
+        <div class="navbar__logo ">
+          <img src="./img/logo.png" alt="website logo" class="md:w-4/12 w-5/12" />
+        </div>
+        <!-- links -->
+        <ul class="navbar__links ">
+
+          <li class="navbar__link  underline-hover text-white"><a href="#">Home</a></li>
+          <li class="navbar__link underline-hover text-white "><a href="#thing">About</a></li>
+          <li class="navbar__link underline-hover  text-white"><a href="#works">Resume</a></li>
+          <a href="#foote"><button class="navbar__btn  px-2 py-2 text-pink-200 bg-white ">Contact</button></a>
+          <div class="">
+            <i class="bi bi-brightness-high-fill text-white navbar__link" id="toggleDark"></i>
+          </div>
+
+        </ul>
+        <!-- menu button -->
+        <div class="navbar__icons text-black">
+          <div class="navbar__icon"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- banner -->
+
+
+
+
+
+  <div class="container max-w-4xl mx-auto mt-4  ">
+    <div class="flex flex-col-reverse md:grid grid-cols-2 md:grid-cols-3 md:mt-10 mt-10 ">
+      <div class="col-span-2 ">
+        <div class="banner__heading md:text-left md:mt-0 mt-14 ">
+          <h1 class="">Hello , I'm a</h1>
+
+          <div class="wrapper">
+            <div class="typing-demo typewriter md:mb-4 mb-5 md:px-0 px-5 ">
+              <a class=" text-pink-200">W</a>eb <a class=" text-pink-200">D</a>esi<a class=" text-pink-200">g</a>ne<a
+                class=" text-pink-200">r</a>
+            </div>
+          </div>
+          <p class="text-lg">Hi, I'm Nguyen Van Manh, a passionate and passionate web designer</p>
+
+          <a href="#">
+            <button
+              class="transition ease-in-out delay-150 bg-pink-200 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 px-2 py-2">
+              View More
+            </button>
+          </a>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-span-1 m-auto   md:px-0 px-16  ">
+        <img src="img/z4493873610065_b0796e11b289a792fe7aa85952bb88cb.jpg" class=" rounded-full md:w-full w-12/12 aos-init " data-aos="fade-right" />
+      </div>
+
+    </div>
+  </div>
+  <!-- things -->
+  <div class="" id="thing"></div>
+  <section id="things">
+    <div class="container max-w-6xl mx-auto">
+      <!-- dec -->
+      <div class="things__dec ">
+        <img src="./img/anh1.png" alt="" class=" " data-aos="fade-up-right" />
+      </div>
+      <!-- dec -->
+      <div class="things__dec pr-32">
+        <img src="./img/anh2.png" alt="" class=" w-full " data-aos="fade-up-left"/>
+      </div>
+
+      <!-- heading -->
+      <h2>About me</h2>
+
+      <!-- item 1 -->
+      <div class="things__item ">
+        <!-- img -->
+        <div class="md:pl-28 pl-24 ">
+          <img src="./img/aa.jpg" alt="illustration of women" class="md:w-10/12 w-10/12 aos-init " data-aos="fade-right" />
+        </div>
+
+        <!-- text -->
+        <div class="things__item--headingg ">
+          <h3>GIỚI THIỆU
+            THÔNG TIN CÁ NHÂN</h3>
+
+          <p class="text-xl underline decoration-sky-500">Nguyễn Văn Mạnh</p>
+          <p href=""> Học trường: <a href="https://caodang.fpt.edu.vn/gioi-thieu-truong-cao-dang-fpt-polytechnic"
+              class="underline decoration-pink-500">Cao đẳng FPT Polytechnic Hà Nội</a> </p>
+
+          <p>
+
+
+            Chuyên ngành: <a href="https://caodang.fpt.edu.vn/gioi-thieu-truong-cao-dang-fpt-polytechnic"
+              class="underline decoration-indigo-500/30">Thiết kế web</a>
+          
+
+            Niềm đam mê lập trình mãnh liệt, sức trẻ nhiệt huyết và tinh thần ham học hỏi kiến thức từ công ty thì em
+            tin rằng em sẽ đóng góp giá trị cho quý công ty.
+          </p>
+        </div>
+      </div>
+      <!-- item 2 -->
+      <div class="things__item">
+        <!-- img -->
+        <img src="./img/about2 (1).png" alt="illustration of women" />
+        <!-- text -->
+        <div class="things__item--heading">
+          <h3>
+            Mục tiêu:
+          </h3>
+          <p>
+
+
+            <a class="underline  decoration-orange-300 font-bould">Ngắn hạn:</a>
+            Đi thực tập và hoàn thành tốt công việc được giao
+            <br> <a class="underline  decoration-orange-300 font-bould"> Dài hạn:</a> phát triển các kỹ năng lập trình
+            web của mình trong một môi trường chuyên nghiệp và thúc đẩy
+            sự nghiệp của mình. Trở thành leader dự án sau 2,3 năm tham gia vào đội ngũ quản lý của công ty
+          </p>
+        </div>
+      </div>
+      <!-- item 3 -->
+      <div class="things__item">
+        <!-- img -->
+        <img src="./img/things-item-3.png" alt="illustration of computer" />
+        <!-- text -->
+        <div class="things__item--heading">
+          <h3>Kỹ Năng</h3>
+          <p>
+            <a class="underline  decoration-pink-700 font-bould">   Kỹ năng lập trình:</a> HTML/CSS, JavaScript, Bootstrap, ReactJS, AngularJS,tailwindcss, Aos,..
+            <br>
+            <a class="underline  decoration-pink-700 font-bould"> Kỹ năng sử dụng các công cụ và phần mềm lập trình:</a> Visual Studio Code, Git, Figma,canva,..
+            <br>
+            <a class="underline  decoration-pink-700 font-bould"> Kỹ năng giải quyết vấn đề:</a> làm việc nhóm, tổ chức công việc.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- works -->
+  <section id="works">
+    <div class="container">
+      <!-- dec -->
+      <div class="works__dec">
+        <img src="./img/358517425_805814997622434_2398654648936657582_n.png" alt="" data-aos="fade-up-right"/>
+      </div>
+      <div class="works__dec">
+        <img src="./img/358460963_288523273670479_7202030848846825428_n.png" alt="" data-aos="fade-up-left"/>
+      </div>
+      <!-- heading -->
+      <h2>Recent Works</h2>
+      <!-- img -->
+      <div class="works__img ">
+        <div class="works__img--single banner-down aos-init" data-aos="fade-up">
+          <img src="./img/work-1.png" alt="bag" />
+        </div>
+        <div class="works__img--single banner-down aos-init" data-aos="fade-up">
+          <img src="./img/work-2.png" alt="plate" />
+        </div>
+        <div class="works__img--single banner-down aos-init" data-aos="fade-up">
+          <img src="./img/work-3.png" alt="women" />
+        </div>
+        <div class="works__img--single banner-down aos-init" data-aos="fade-up">
+          <img src="./img/work-4.png" alt="piggy bank" />
+        </div>
+      </div>
+      <!-- btn -->
+      <div class="" id="foote"></div>
+      <div class="works__btn">
+        <a href="#"><button>Contact
+          </button></a>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="container  max-w-6xl mx-auto">
+      <!-- dec -->
+      <div class="footer__dec">
+        <img src="./img/anh5.png" alt="" data-aos="fade-up-right"/>
+      </div>
+      <!-- img -->
+      <div class="footer__img">
+        <img src="./img/anh5.png" alt="illustration of women" data-aos="fade-left"/>
+      </div>
+      <!-- heading -->
+      <div class="footer__heading  text-black">
+        <h1>Ready to make something amazing?</h1>
+        <!-- contact -->
+        <div class="footer__contact">
+          <a href="tel:0973434485">
+            <i class="fas fa-phone-alt"></i>
+            <p>0973-4344-85</p>
+          </a>
+          <a href="mailto:Manhn8929@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <p>Manhn8929@gmail.com</p>
+          </a>
+        </div>
+        <div class="banner__socials">
+          <a href="https://www.facebook.com/profile.php?id=100017059416774"><i class="bi bi-facebook"></i></a>
+          <a
+            href="https://www.instagram.com/bongb.ong03/?fbclid=IwAR2gIKoS00x_eAVUvNm_MtkftQLaY1s_DIFrdmfBKsfmhCv4xMHfmpMXXQY"><i
+              class="bi bi-instagram"></i></a>
+          <a href="Manhn8929@gmail.com "><i class="bi bi-envelope"></i></a>
+          <a href=" https://i.imgur.com/UxGtyhE.jpg"><i class="bi bi-telegram"></i></a>
+      
+
+        </div>
+      </div>
+    
+    </div>
+  
+  </footer>
+  <p class="text-center py-2">Em xin cảm ơn mọi người đã dành thời gian đọc profile của em</p>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/28c0af3030.js" crossorigin="anonymous"></script>
+  <!-- main js -->
+  <script src="./js/main.js"></script>
+  <script src="./js/den.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+          $('header').addClass('sticky');
+        } else {
+          $('header').removeClass('sticky');
+        }
+      });
+
+    })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+
+</html>
