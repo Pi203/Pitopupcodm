@@ -6,6 +6,20 @@
   box-sizing: border-box;
 }
 
+.notification {
+  position: fixed;
+  bottom: 32px;
+  right: -150px;
+
+  
+}
+
+.notification.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 html {
   scroll-behavior: smooth;
 }
