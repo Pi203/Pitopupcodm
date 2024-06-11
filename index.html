@@ -10,11 +10,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
   <!-- main css -->
+
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <title>Portfolio</title>
+  <style>
+    /* Continuous Rotation Animation */
+    @keyframes rotateContinuous {
+      from {
+        transform: rotateY(0deg);
+      }
+
+      to {
+        transform: rotateY(360deg);
+      }
+    }
+
+    .rotate-continuous {
+      animation: rotateContinuous 4s linear infinite;
+      /* Adjust animation duration as needed */
+    }
+  </style>
 </head>
 
 <body>
@@ -27,14 +46,15 @@
       <nav class="navbar">
         <!-- logo -->
         <div class="navbar__logo ">
-          <img src="./img/logo.png" alt="website logo" class="md:w-4/12 w-5/12" />
+          <img src="call of duty/Ảnh chụp màn hình 2024-06-11 165934.png" alt="website logo" class="md:w-4/12 w-5/12" />
         </div>
         <!-- links -->
         <ul class="navbar__links ">
 
           <li class="navbar__link  underline-hover text-white"><a href="#">Home</a></li>
           <li class="navbar__link underline-hover text-white "><a href="#thing">About</a></li>
-          <li class="navbar__link underline-hover  text-white"><a href="#works">Project</a></li>
+          <li class="navbar__link underline-hover  text-white"><a href="#cp">CP Packages</a></li>
+          <!-- <li class="navbar__link underline-hover  text-white"><a href="#works">Trust</a></li> -->
           <a href="#foote"><button class="navbar__btn  px-2 py-2 text-pink-200 bg-white ">Contact</button></a>
           <div class="">
             <i class="bi bi-brightness-high-fill text-white navbar__link" id="toggleDark"></i>
@@ -58,20 +78,35 @@
     <div class="flex flex-col-reverse md:grid grid-cols-2 md:grid-cols-3 md:mt-10 mt-10 ">
       <div class="col-span-2 ">
         <div class="banner__heading md:text-left md:mt-0 mt-14 ">
-          <h1 class="">Hello , I'm a</h1>
+          <h1 class="">Hello , I'm Pi</h1>
 
           <div class="wrapper">
             <div class="typing-demo typewriter md:mb-4 mb-5 md:px-0 px-5 ">
-              <a class=" text-pink-200">W</a>eb <a class=" text-pink-200">D</a>esi<a class=" text-pink-200">g</a>ne<a
-                class=" text-pink-200">r</a>
+              <div class="flex">
+                <a class=" text-pink-200  ">Topup</a><a class=" "> <a href="" class="px-3">CODM </a> <img
+                    class="w-10 h-10 mt -12" src="/call of duty/Remove-bg.ai_1718099351931.png" alt="">
+
+
+
+              </div>
+
+              <div class="md:w-32 w-68  md:pl-0 pl-6 md:pr-18 pr-0"><img
+                  src="data:image/png;base64,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">
+              </div>
             </div>
           </div>
-          <p class="text-lg">Hi, I'm Nguyen Van Manh, a passionate and passionate web designer</p>
 
-          <a href="file:///C:/Users/manhn/Downloads/CV%20nguy%E1%BB%85n%20v%C4%83n%20m%E1%BA%A1nh%20-%20MS-TopCV.vn%20(1).pdf">
+
+          <a href="https://t.me/+XIlYwcIQbCNjNGRl">
             <button
               class="transition ease-in-out delay-150 bg-pink-200 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 px-2 py-2">
-             My Frofile
+              Channel
+            </button>
+          </a>
+          <a href="https://t.me/Topup_Codm_Pi" class="px-2">
+            <button
+              class="transition ease-in-out delay-150 bg-pink-200 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 px-2 py-2">
+              Account
             </button>
           </a>
         </div>
@@ -81,8 +116,7 @@
 
 
       <div class="col-span-1 m-auto   md:px-0 px-16  ">
-        <img src="img/z4493873610065_b0796e11b289a792fe7aa85952bb88cb.jpg"
-          class=" rounded-full md:w-full w-12/12 aos-init " data-aos="fade-right" />
+        <img src="call of duty/images.jpg" class=" rounded-full md:w-full w-12/14 aos-init " data-aos="fade-right" />
       </div>
 
     </div>
@@ -92,51 +126,80 @@
   <section id="things">
     <div class="container max-w-6xl mx-auto">
       <!-- dec -->
-      <div class="things__dec ">
-        <img src="./img/anh1.png" alt="" class=" " data-aos="fade-up-right" />
+      <div class="things__dec pl - 24">
+        <img src="./call of duty/Remove-bg.ai_1718099351931.png" alt="" class=" " data-aos="fade-up-right" />
       </div>
       <!-- dec -->
-      <div class="things__dec pr-32">
-        <img src="./img/anh2.png" alt="" class=" w-full " data-aos="fade-up-left" />
+      <div class="things__dec pr-12">
+        <img src="./call of duty/Remove-bg.ai_1718099351931.png" alt="" class=" w-full " data-aos="fade-up-left" />
       </div>
 
       <!-- heading -->
-      <h2>About me</h2>
-
+      <h2>
+        <link rel="stylesheet" href="" class="text-3xl"> About me
+      </h2>
+      <ion-icon name="card-outline"></ion-icon>
       <!-- item 1 -->
       <div class="things__item ">
         <!-- img -->
         <div class="md:pl-28 pl-[50px] ">
-          <img src="./img/aa.jpg" alt="illustration of women" class="md:w-10/12 w-10/12 aos-init "
-            data-aos="fade-right" />
+          <img class="md:w-0 w-96" src="call of duty/Ảnh chụp màn hình 2024-06-11 165934.png"
+            alt="illustration of women" class="md:w-10/12 w-10/12 aos-init " data-aos="fade-right" />
         </div>
 
         <!-- text -->
         <div class="things__item--headingg " data-aos="fade-left">
-          <h3>GIỚI THIỆU
-            THÔNG TIN CÁ NHÂN</h3>
+          <h3 class="py-2">INTRODUCE
+            PERSONAL INFORMATION</h3>
 
-          <p class="text-xl underline decoration-sky-500">Nguyễn Văn Mạnh</p>
-          <p>Chuyên ngành: Thiết kế web</p>
-          <p href=""> Học trường: <a href="https://caodang.fpt.edu.vn/gioi-thieu-truong-cao-dang-fpt-polytechnic"
-              class="underline decoration-pink-500 hover:text-pink-200">    <!-- Cao đẳng FPT Polytechnic -->........... Hà Nội</a> </p>
-           
-          <p>
-            Niềm đam mê lập trình mãnh liệt, sức trẻ nhiệt huyết và tinh thần ham học hỏi kiến thức từ công ty thì em
-            tin rằng em sẽ đóng góp giá trị cho quý công ty.
+          <a href="https://t.me/Topup_Codm_Pi" class="text-xl underline decoration-sky-500 mt-3">Pi Topup Codm ☑️</a>
+
+
+
+          <a class="flex items-center justify-center md:items-start md:justify-start">
+            <img src="call of duty/Remove-bg.ai_1718101727478.png" class="w-1/3 md:w-1/7 rotate-continuous" alt="Image">
+          </a>
+          <a>Say no to scams ❌❌❌</a>
           </p>
+          <a href="">
+            <a href="" class="underline decoration-pink-500 hover:text-pink-200"> Speed : verry fast !!⚡</a>
+            </p>
+
+            <p>
+              <a class="text-red-400 text-2xl" id="cp">☞</a> We accept all orders over <a class="text-yellow-600 ">5000 CP 💰
+              </a>, delivery speed is unquestionable,Price is negotiable - according to the market, PRESTIGE, QUALITY,
+              SPEED IS WHAT WE DO NOT LACK <a class="text-red-400 text-xl">❣❣❣❣</a>
+            </p>
         </div>
       </div>
-      <!-- item 2 -->
-      <div class="things__item">
-        <!-- img -->
-        <img src="./img/about2 (1).png" alt="illustration of women" data-aos="fade-right" />
-        <!-- text -->
-        <div class="things__item--heading" data-aos="fade-left">
-          <h3>
-            Mục tiêu:
-          </h3>
-          <p>
+      <div class="things__dec pr-12">
+        <img src="./call of duty/Remove-bg.ai_1718099351931.png" alt="" class=" w-full " data-aos="fade-up-left" />
+      </div>
+      <div class="things__dec pl - 24">
+        <img src="./call of duty/Remove-bg.ai_1718099351931.png" alt="" class=" " data-aos="fade-up-right" />
+      </div>
+        <div class="text-center mt-8 " >
+          <a rel="stylesheet" class="text-xl mt-3 block text-yellow-600">CP Packages $ <svg width="10%" height="10%" viewBox="0 0 24 24"
+              fill="none" xmlns="http://www.w3.org/2000/svg" class="px-2 text-pink-200">
+              <path
+                d="M22 7.99992V11.9999M10.25 5.49991H6.8C5.11984 5.49991 4.27976 5.49991 3.63803 5.82689C3.07354 6.11451 2.6146 6.57345 2.32698 7.13794C2 7.77968 2 8.61976 2 10.2999L2 11.4999C2 12.4318 2 12.8977 2.15224 13.2653C2.35523 13.7553 2.74458 14.1447 3.23463 14.3477C3.60218 14.4999 4.06812 14.4999 5 14.4999V18.7499C5 18.9821 5 19.0982 5.00963 19.1959C5.10316 20.1455 5.85441 20.8968 6.80397 20.9903C6.90175 20.9999 7.01783 20.9999 7.25 20.9999C7.48217 20.9999 7.59826 20.9999 7.69604 20.9903C8.64559 20.8968 9.39685 20.1455 9.49037 19.1959C9.5 19.0982 9.5 18.9821 9.5 18.7499V14.4999H10.25C12.0164 14.4999 14.1772 15.4468 15.8443 16.3556C16.8168 16.8857 17.3031 17.1508 17.6216 17.1118C17.9169 17.0756 18.1402 16.943 18.3133 16.701C18.5 16.4401 18.5 15.9179 18.5 14.8736V5.1262C18.5 4.08191 18.5 3.55976 18.3133 3.2988C18.1402 3.05681 17.9169 2.92421 17.6216 2.88804C17.3031 2.84903 16.8168 3.11411 15.8443 3.64427C14.1772 4.55302 12.0164 5.49991 10.25 5.49991Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></a>
+        </div>
+        <!-- item 2 -->
+        <div class="things__item mt-10">
+          <!-- img -->
+          <img src="call of duty/2.jpeg" alt="illustration of women" class="w-full max-w-xs md:max-w-full mx-auto"
+            data-aos="fade-left" />
+
+          <!-- text -->
+          <div class="things__item--heading" data-aos="fade-right">
+            <h3>
+              <img src="call of duty/1.jpeg" alt="illustration of women" class="w-full max-w-xs md:max-w-full mx-auto"
+                data-aos="fade-right" />
+            </h3>
+            
+            <!-- <p>
 
 
             <a class="underline  decoration-orange-300 font-bould">Ngắn hạn:</a>
@@ -144,52 +207,68 @@
             <br> <a class="underline  decoration-orange-300 font-bould"> Dài hạn:</a> phát triển các kỹ năng lập trình
             web của mình trong một môi trường chuyên nghiệp và thúc đẩy
             sự nghiệp của mình. Trở thành leader dự án sau 3,4 năm tham gia vào đội ngũ quản lý của công ty
-          </p>
+          </p> -->
+          </div>
         </div>
-      </div>
+    
       <!-- item 3 -->
-      <div class="things__item">
+      <div class="things__item mt-10">
         <!-- img -->
-        <img src="./img/things-item-3.png" alt="illustration of computer" data-aos="fade-left" />
+        <img src="call of duty/oss-b6e9345fbf0c5cc35b079b4f73d209fe.webp" alt="illustration of computer"
+          data-aos="fade-left" class="w-full max-w-xs md:max-w-full mx-auto" />
         <!-- text -->
         <div class="things__item--heading" data-aos="fade-right">
-          <h3>Kỹ Năng</h3>
+          <div class="flex justify-center items-center text-yellow-600">
+
+            <a class="">CP Packages</a>
+            <svg width="10%" height="10%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="px-2 text-pink-200">
+              <path
+                d="M22 7.99992V11.9999M10.25 5.49991H6.8C5.11984 5.49991 4.27976 5.49991 3.63803 5.82689C3.07354 6.11451 2.6146 6.57345 2.32698 7.13794C2 7.77968 2 8.61976 2 10.2999L2 11.4999C2 12.4318 2 12.8977 2.15224 13.2653C2.35523 13.7553 2.74458 14.1447 3.23463 14.3477C3.60218 14.4999 4.06812 14.4999 5 14.4999V18.7499C5 18.9821 5 19.0982 5.00963 19.1959C5.10316 20.1455 5.85441 20.8968 6.80397 20.9903C6.90175 20.9999 7.01783 20.9999 7.25 20.9999C7.48217 20.9999 7.59826 20.9999 7.69604 20.9903C8.64559 20.8968 9.39685 20.1455 9.49037 19.1959C9.5 19.0982 9.5 18.9821 9.5 18.7499V14.4999H10.25C12.0164 14.4999 14.1772 15.4468 15.8443 16.3556C16.8168 16.8857 17.3031 17.1508 17.6216 17.1118C17.9169 17.0756 18.1402 16.943 18.3133 16.701C18.5 16.4401 18.5 15.9179 18.5 14.8736V5.1262C18.5 4.08191 18.5 3.55976 18.3133 3.2988C18.1402 3.05681 17.9169 2.92421 17.6216 2.88804C17.3031 2.84903 16.8168 3.11411 15.8443 3.64427C14.1772 4.55302 12.0164 5.49991 10.25 5.49991Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+
           <p>
-            <a class="underline  decoration-pink-700 font-bould"> Kỹ năng lập trình:</a> HTML/CSS, JavaScript,
-            Bootstrap, ReactJS, AngularJS,tailwindcss, Aos,..
-            <br>
-            <a class="underline  decoration-pink-700 font-bould"> Kỹ năng sử dụng các công cụ và phần mềm lập trình:</a>
-            Visual Studio Code, Git, Figma,canva,..
-            <br>
-            <a class="underline  decoration-pink-700 font-bould"> Kỹ năng giải quyết vấn đề:</a> làm việc nhóm, tổ chức
-            công việc.
+            <a class="   font-bould "> <a class="text-red-400 text-2xl">☞</a>We accept top-ups of 5000 CP 💰 and
+              above💞,
+              with fast processing and market-based pricing - negotiable. Say no to scams🚫
+              <br>
+              <a class=" py-2  font-bould"> <a class="text-red-400 text-2xl">☞</a>Chúng tôi chấp nhận nạp tiền từ 5000
+                CP 💰 trở lên 💞💞, xử lý nhanh và định giá theo thị trường - có thể thương lượng. 
+                <br>
+                <a href=""><a class="text-red-400 text-2xl">☞</a> نحن نقبل الودائع من 5000 CP 💰 أو أكثر.
+                  مع سرعة المعالجة السريعة وسعر السوق - قابل للتفاوض. قل لا لعمليات الاحتيال🚫</a>
+
           </p>
         </div>
       </div>
     </div>
   </section>
   <!-- works -->
-  <section id="works">
+  <!-- <section id="works">
     <div class="container">
-      <!-- dec -->
+   
       <div class="works__dec">
-        <img src="./img/358517425_805814997622434_2398654648936657582_n.png" alt="" data-aos="fade-up-right" />
+        <img src="./call of duty/Remove-bg.ai_1718099351931.png" alt="" data-aos="fade-up-right" />
       </div>
       <div class="works__dec z-0">
-        <img src="./img/358460963_288523273670479_7202030848846825428_n.png" alt="" data-aos="fade-up-left" />
+        <img src="./call of duty/Remove-bg.ai_1718099351931.png" alt="" data-aos="fade-up-left" />
       </div>
-      <!-- heading -->
-      <h2 class="">Project</h2>
-      <!-- img -->
-      <div class="">
       
-        <div class="works__img   z-3">
-          
+      <h2 class="">Trust</h2>
+   
+      <div class=""> -->
+
+  <!-- <div class="works__img   z-3">
+
           <div class="works__img--single banner-down aos-init py-5 " data-aos="fade-up">
-            <a href="https://duan-delta.vercel.app/"> <img src="./img/z5224190319952_18eef367c2b8ed748f8d052a4848d525.jpg" alt="plate" /></a>
+            <a href="https://duan-delta.vercel.app/"> <img
+                src="./img/z5224190319952_18eef367c2b8ed748f8d052a4848d525.jpg" alt="plate" /></a>
           </div>
           <div class="works__img--single banner-down aos-init py-5" data-aos="fade-up">
-            <a href="https://html-iota-two.vercel.app/"> <img src="./img/z5224284138568_a44fa9d63fc79558f8f8bf19f857bbfd.jpg" alt="women" /></a>
+            <a href="https://html-iota-two.vercel.app/"> <img
+                src="./img/z5224284138568_a44fa9d63fc79558f8f8bf19f857bbfd.jpg" alt="women" /></a>
           </div>
           <div class="works__img--single banner-down aos-init py-2" data-aos="fade-up">
             <a href=""><img src="./img/z5224282506667_5fc184e9b2bd5a44525a0945c6d5ee4e.jpg" alt="bag" /></a>
@@ -197,15 +276,15 @@
           <div class="works__img--single banner-down aos-init py-2" data-aos="fade-up">
             <a href=""> <img src=" ./img/z5224278967928_6ac9c87924a7d8c64fb0f0d118f78b55.jpg" alt="piggy bank" /></a>
           </div>
-        </div>
-   
-        <!-- btn -->
-        <div class="" id="foote"></div>
-        <div class="works__btn">
-          <a href="#"><button>Contact
-            </button></a>
-        </div>
-      </div>
+        </div> -->
+
+  <!-- btn -->
+  <div class="" id="foote"></div>
+  <div class="works__btn">
+    <a href="#"><button>Contact
+      </button></a>
+  </div>
+  </div>
   </section>
   <!-- footer -->
   <footer id="footer">
@@ -220,26 +299,18 @@
       </div>
       <!-- heading -->
       <div class="footer__heading manhem py-5 md:text-black text-none">
-        <h1 data-aos="fade-left">Ready to make something amazing?</h1>
+        <h1 data-aos="fade-left">꧁ Are you willing to work with me? ꧂</h1>
         <!-- contact -->
         <div class="footer__contact manhem">
-          <a href="tel:0973434485">
-            <i class="fas fa-phone-alt" data-aos="fade-right"></i>
-            <p data-aos="fade-left manhem">0973-**44-**</p>
-          </a>
-          <a href="mailto:Manhn8929@gmail.com">
-            <i class="fas fa-envelope" data-aos="fade-right"></i>
-            <p data-aos="fade-left">Manhn8929@gmail.com</p>
-          </a>
+
         </div>
         <div class="banner__socials">
-          <a href="" data-aos="fade-right"><i
-              class="bi bi-facebook" data-aos="fade-right"></i></a>
-        
-          <a href="Manhn8929@gmail.com " data-aos="fade-right"><i class="bi bi-envelope"></i></a>
-          <a href=" https://i.imgur.com/UxGtyhE.jpg" data-aos="fade-right"><i class="bi bi-telegram"></i></a>
-          <a href="https://www.instagram.com/bongb.ong03/?fbclid=IwAR2gIKoS00x_eAVUvNm_MtkftQLaY1s_DIFrdmfBKsfmhCv4xMHfmpMXXQY"
-          data-aos="fade-right"><i class="bi bi-instagram"></i></a>
+          <a href="https://t.me/Topup_Codm_Pi" data-aos="fade-right"><i class="bi bi-facebook"
+              data-aos="fade-right"></i></a>
+
+          <a href="https://t.me/Topup_Codm_Pi " data-aos="fade-right"><i class="bi bi-envelope"></i></a>
+          <a href="https://t.me/Topup_Codm_Pi" data-aos="fade-right"><i class="bi bi-telegram"></i></a>
+          <a href="https://t.me/Topup_Codm_Pi" data-aos="fade-right"><i class="bi bi-instagram"></i></a>
 
         </div>
       </div>
